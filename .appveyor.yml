@@ -1,0 +1,19 @@
+install:
+  - ps: iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+  - ps: scoop bucket add extras
+  - ps: scoop install make visualc
+artifacts:
+  - path: is-windows-server.exe
+    name: is-windows-server.exe
+build_script:
+  - make
+test_script:
+  - is-windows-server
+deploy:
+  provider: GitHub
+  auth_token:
+    secure: gskuIEvm/3WstF5xkqyBHD2w+qmfvKS7WsulFPQX9ZTj0bcGWxpikHjdnyJi7ksn
+  artifact: is-windows-server.exe
+  on:
+    APPVEYOR_REPO_TAG: true
+    APPVEYOR_REPO_NAME: MarkTiedemann/is-windows-server
