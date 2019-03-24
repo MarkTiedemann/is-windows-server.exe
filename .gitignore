@@ -2,3 +2,4 @@
 *.exe
 include/um
 include/shared
+.vscode

@@ -1,8 +1,6 @@
-# is-windows-server [![Build status](https://ci.appveyor.com/api/projects/status/dbyfr3p8x3ilf7fj?svg=true)](https://ci.appveyor.com/project/MarkTiedemann/is-windows-server)
+# is-windows-server.exe [![Build status](https://ci.appveyor.com/api/projects/status/31k0tl2w0arj33c8?svg=true)](https://ci.appveyor.com/project/MarkTiedemann/is-windows-server-exe)
 
 **Print `true` when running on Windows Server else `false`.**
-
-Built for [`windows-release`](https://github.com/sindresorhus/windows-release).
 
 ## Installation
 
